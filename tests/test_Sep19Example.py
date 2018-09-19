@@ -9,6 +9,10 @@ from click.testing import CliRunner
 
 from Sep19Example import Sep19Example
 from Sep19Example import cli
+def test_addition():
+    result=Sep19Example.addition(2,3)
+    assert result==5
+    assert Sep19Example.c==9
 
 
 @pytest.fixture
