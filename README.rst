@@ -18,6 +18,10 @@ Sep19Example
      :target: https://pyup.io/repos/github/ConnorCox1996/Sep19Example/
      :alt: Updates
 
+.. image:: https://coveralls.io/repos/github/ConnorCox1996/Sep19Example/badge.svg?branch=master
+:target: https://coveralls.io/github/ConnorCox1996/Sep19Example?branch=master
+
+
 
 
 travis example
