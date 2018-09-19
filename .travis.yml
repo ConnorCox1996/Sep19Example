@@ -17,11 +17,11 @@ python:
 - sudo apt-get install -qq python-numpy python-scipy python-matplotlib
 
 script: 
-- coverage run --source=final_project/final_project.py setup.py test
+- coverage run setup.py test
 - coverage report -m
 
 # Command to run tests, e.g. python setup.py test
-script: tox
+#script: tox
 
 # Assuming you have installed the travis-ci CLI tool, after you
 # create the Github repo and add it to Travis, run the
