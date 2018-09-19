@@ -19,6 +19,7 @@ python:
 script: 
 - coverage run setup.py test
 - coverage report -m
+after_success: coveralls
 
 # Command to run tests, e.g. python setup.py test
 #script: tox
