@@ -8,16 +8,19 @@ python:
   - 2.7
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-#install: pip install -U tox-travis
+install: 
+#pip install -U tox-travis
+-pip install coveralls
+-python setup.py install
 
-#before_install:
+before_install:
 - pip install coverage
 - pip install matplotlib
 - pip install scipy
 - sudo apt-get install -qq python-numpy python-scipy python-matplotlib
 
 script: 
-- coverage run setup.py test
+- coverage run --source=Sep19Example/Sep19Example.py setup.py test
 - coverage report -m
 after_success: coveralls
 
